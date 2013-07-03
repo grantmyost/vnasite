@@ -1,0 +1,439 @@
+
+
+// Core variables and mixins
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+
+
+// General
+// --------------------------------------------------
+
+@main-section-padding:60px;
+html {
+  background:@grayLighter;
+}
+body {
+  max-width:1500px;
+  box-shadow:0 0 15px @gray;
+  margin:0 auto;
+//  overflow-x:hidden;
+}
+
+
+
+// Header
+// --------------------------------------------------
+
+#logo-anchor {
+}
+#logo {
+  width:400px;
+  margin-top:15px;
+}
+#main-header-nav {
+//  margin-top:-100px;
+//  padding-right:28px;
+//  position:relative;
+//  z-index:100;
+}
+#menu-primary-navigation li {
+//  float:none;
+//  display:inline;
+}
+#menu-primary-navigation li:nth-child(3) {
+//  margin-right:250px;
+}
+#menu-primary-navigation a {
+  color:@white;
+  text-shadow:none;
+  text-transform:uppercase;
+//  display:inline;
+//  padding-top:10px;
+//  padding-bottom:10px;
+}
+#menu-primary-navigation a:hover {
+  color:@grayLight;
+}
+.navbar-inner {
+  background:@black;
+}
+.navbar #menu-primary-navigation.nav > .active > a, .navbar #menu-primary-navigation.nav > .active > a:hover, .navbar #menu-primary-navigation.nav > .active > a:focus {
+  box-shadown:none;
+  color:@grayLight;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  background-color:@black;
+}
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+  box-shadow:none;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+}
+
+
+
+
+// #myCarousel
+// --------------------------------------------------
+
+.carousel {
+  margin-bottom: 60px;
+}
+
+.carousel .container {
+  position: relative;
+  z-index: 9;
+}
+
+.carousel-control {
+  height: 80px;
+  margin-top: 0;
+  font-size: 120px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  background-color: transparent;
+  border: 0;
+  z-index: 10;
+}
+
+.carousel .item {
+  height: 500px;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+.carousel-caption {
+  background-color: transparent;
+  position: static;
+  max-width: 550px;
+  padding: 0 20px;
+  margin-top: 200px;
+}
+.carousel-caption h1,
+.carousel-caption .lead {
+  margin: 0;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+  margin-top: 10px;
+}
+
+
+
+// Homepage Content
+// --------------------------------------------------
+
+.gray-background-row {
+  position:relative;
+}
+#homepage-content {
+  padding-bottom:@main-section-padding;
+}
+#homepage-content h1 {
+  font-size:20px;
+  line-height:1;
+}
+.row .row {
+  margin-bottom:30px;
+}
+#gray-news-background {
+  position:absolute;
+  z-index:1;
+  background:@grayLight;
+  width:90%;
+  height:100%;
+  right:0px;
+}
+.rrmb {
+  position:absolute;
+  height:20px;
+  width:20px;
+  right:0;
+  bottom:0;
+  background:@red;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+.span6-gray-news {
+  position:relative;
+  z-index:10;
+  height:100%;
+  overflow:hidden;
+}
+.news-blurb-s3 {
+  position:relative;
+  z-index:10;
+  background:@black;
+  height:100%;
+  width:100%;
+}
+.s3 {
+  height:100%;
+  max-width:270px;
+  position:relative;
+}
+.text-over-image {
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:100;
+}
+.text-over-image .month {
+  padding-top:20%;
+  margin:0;
+  line-height:0;
+}
+.text-over-image .day {
+  padding-top:10%;
+  color:@red;
+  font-size:30px;
+  margin:0;
+  line-height:0;
+}
+.text-over-image .year {
+  padding-top:10%;
+  margin:0;
+  line-height:0;
+}
+#homepage-content .enfw {
+//  display:block;
+//  position:absolute;
+  padding-top:20%;
+  margin:0;
+}
+#homepage-content .enti {
+//  display:block;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:0;
+  width:50%;
+}
+#homepage-content .ensi {
+//  display:block;
+  width:20px;
+  top:0;
+  right:0;
+  bottom:0;
+  margin:0;
+}
+
+
+
+// Volker Gallery
+// --------------------------------------------------
+
+#volker-gallery {
+  background:@grayLighter;
+  padding-top:@main-section-padding;
+  padding-bottom:@main-section-padding;
+}
+#volker-gallery h1 {
+  margin-bottom:@main-section-padding;
+}
+
+
+
+
+// Wrap
+// -------------------------------------------------
+
+.wrap {
+  padding-right:20px;
+  padding-left:20px;
+}
+
+
+
+// Sidebar
+// --------------------------------------------------
+
+.bar-on-the-side img {
+  margin-bottom:30px;
+}
+.bar-on-the-side {
+  padding-top:30px;
+}
+
+
+
+// footer
+// --------------------------------------------------
+
+footer {
+  background:@black;
+}
+footer a {
+  color:@white;
+}
+footer a:hover {
+  color:@grayLight;
+  text-decoration:none;
+}
+footer .nav {
+  margin-top:30px;
+  margin-bottom:100px;
+}
+footer .nav > li > a {
+  color:@white;
+  text-transform:uppercase;
+}
+footer .nav > li > a:hover {
+  background:transparent;
+  color:@grayLight;
+}
+#copy-right {
+  margin-top:-127px;
+  color:@white;
+  text-transform:uppercase;
+  float:right;
+  text-align:right;
+}
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+  background-color:transparent;
+  color:@grayLight;
+}
+
+
+
+// page.php
+// -------------------------------
+
+#page-title-container {
+  background:@black;
+  padding-top:20px;
+  padding-bottom:20px;
+  margin-bottom:30px;
+}
+#page-title-container h1 {
+  color:@white;
+  letter-spacing:1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// --------------------------------------------------
+// Responsive: Large desktop and up
+// --------------------------------------------------
+
+
+@media (min-width: 1200px) {
+
+  
+
+}
+
+
+
+
+//
+// Responsive: Default
+// --------------------------------------------------
+
+
+@media (min-width: 980px) and (max-width: 1199px) {
+
+  
+
+}
+
+
+
+
+// --------------------------------------------------
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .carousel .item {
+    height: 500px;
+  }
+  .carousel img {
+    width: auto;
+    height: 500px;
+  }
+
+}
+
+
+
+
+
+
+
+// --------------------------------------------------
+// Responsive: Landscape phone to desktop/tablet
+// --------------------------------------------------
+
+@media (max-width: 767px) {
+
+  .carousel {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .carousel .container {
+
+  }
+  .carousel .item {
+    height: 300px;
+  }
+  .carousel img {
+    height: 300px;
+  }
+  .carousel-caption {
+    width: 65%;
+    padding: 0 70px;
+    margin-top: 100px;
+  }
+  .carousel-caption h1 {
+    font-size: 30px;
+  }
+  .carousel-caption .lead,
+  .carousel-caption .btn {
+    font-size: 18px;
+  }
+
+}
+
+
+
+
+
+
+
+// --------------------------------------------------
+// UP TO LANDSCAPE PHONE
+// ---------------------
+
+@media (max-width: 480px) {
+  
+
+
+}
+
